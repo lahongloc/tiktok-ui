@@ -8,20 +8,12 @@ function App() {
     return (
         <Router>
             <div>
-                <h1>Cấu hình Router/Layout cho dự án</h1>
-
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         const Layout =
                             route.layout === null
                                 ? Fragment
                                 : route.layout || DefaultLayout;
-                        // let Layout = DefaultLayout;
-                        // if (route.layout) {
-                        //     Layout = route.layout;
-                        // } else if (route.layout === null) {
-                        //     Layout = Fragment;
-                        // }
 
                         const Page = route.component;
                         return (
