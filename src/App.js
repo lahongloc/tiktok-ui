@@ -1,12 +1,11 @@
-import Button from "~/components/Button";
-
 function App() {
-  return (
-    <div>
-      <Button />
-      <h1>tiktok never dies</h1>
-    </div>
-  );
+    return (
+        <div>
+            <a href="https://github.com/sondnpt00343/tiktok-ui/commit/b0f8e67a0a37d8d0c13216f0965485ea8794c663">
+                Tutorial here
+            </a>
+        </div>
+    );
 }
 
 export default App;
