@@ -35,8 +35,10 @@ function Menu({ children, items = [], onChange = defaultFn }) {
 
     return (
         <Tippy
+            onHide={() => setHistory([{ data: items }])}
             interactive
             delay={[0, 500]}
+            offset={[12, 18]}
             placement="bottom-end"
             render={(attrs) => (
                 <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
